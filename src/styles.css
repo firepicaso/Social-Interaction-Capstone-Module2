@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: #fff7ea;
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 header img {
@@ -36,9 +38,16 @@ header img {
 
 .menu-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+
+.menu-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
 }
 
 .menu-card img {
