@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+header img {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 160px;
+}
+
+footer {
+  color: rgb(57, 57, 57);
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 3rem;
+}
+
