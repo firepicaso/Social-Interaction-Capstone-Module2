@@ -49,8 +49,8 @@ header img {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 1rem;
-    border-radius: 0.4rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
     gap: 1rem;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -61,11 +61,16 @@ header img {
 
 .menu-title {
     display: flex;
+    justify-content: space-between;
     gap: 0.5rem;
 }
 
 .menu-card h2 {
     font-size: 0.8rem;
+}
+
+.menu-card h3 {
+    color: rgb(130, 130, 130);
 }
 
 .like-counter {
@@ -77,8 +82,8 @@ header img {
 button {
     background-color: #ffae18;
     padding: 0.3rem 0.5rem;
+    margin-bottom: 0.3rem;
     border: unset;
-    border-radius: 0.3rem;
     font-weight: 500;
     font-size: 0.8rem;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
