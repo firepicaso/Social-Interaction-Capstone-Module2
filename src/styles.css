@@ -20,14 +20,12 @@ header {
 }
 
 header img {
-    margin-top: 2rem;
     width: 80px;
 }
 
 .nav-div {
     display: flex;
-    gap: 1rem;
-    padding-top: 2rem;
+    gap: 1.9rem;
 }
 
 .nav-div a {
@@ -37,14 +35,14 @@ header img {
 }
 
 .menu-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
     margin-top: 2rem;
 }
 
 .menu-card img {
-    width: 120px;    
+    width: 100px;    
 }
 
 .menu-card h2 {
