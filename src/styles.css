@@ -20,28 +20,44 @@ header {
 
 header img {
     margin-top: 2rem;
-    margin-left: 3rem;
-    width: 120px;
+    margin-left: 1rem;
+    width: 80px;
 }
 
 .nav-div {
     display: flex;
-    margin-right: 3rem;
-    gap: 2rem;
+    gap: 1rem;
     padding-top: 2rem;
+    padding-right: 1rem;
 }
 
 .nav-div a {
-    font-size: 1.4rem;
-    color: rgb(57, 57, 57);
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
 }
 
 footer {
-  color: rgb(57, 57, 57);
-  font-weight: 600;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 2rem 3rem;
+    position: absolute;
+    color: #d88e00;
+    font-weight: 600;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    header img {
+        margin-left: 3rem;
+    }
+
+    .nav-div {
+        gap: 3rem;
+        padding-right: 5rem;
+    }
+
+    footer {
+        margin-left: 3rem;
+    }    
 }
 
