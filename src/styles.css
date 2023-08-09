@@ -96,7 +96,7 @@ footer h2 {
     margin: 1rem;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #d88e00;
+    color: rgb(130, 130, 130);
 }
 
 @media (min-width: 768px) {
