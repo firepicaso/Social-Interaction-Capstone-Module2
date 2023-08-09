@@ -28,6 +28,7 @@ header img {
 .nav-div {
     display: flex;
     margin-right: 0.5rem;
+    gap: 1rem;
 }
 
 .nav-div a {
@@ -105,7 +106,7 @@ button {
     }
 
     .nav-div {
-        gap: 3rem;
+        gap: 1rem;
         padding-right: 5rem;
     }
 
