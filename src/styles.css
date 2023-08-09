@@ -18,11 +18,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 header img {
-    width: 80px;
+    width: 60px;
 }
 
 .nav-div {
@@ -56,7 +56,7 @@ header img {
 }
 
 .menu-card img {
-    width: 150px;
+    width: 140px;
 }
 
 .menu-title {
