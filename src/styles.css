@@ -49,13 +49,14 @@ header img {
     font-size: 0.8rem;
 }
 
-footer {
+footer h2 {
     position: absolute;
-    color: #d88e00;
-    font-weight: 600;
     bottom: 0;
     left: 0;
     margin: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d88e00;
 }
 
 @media (min-width: 768px) {
