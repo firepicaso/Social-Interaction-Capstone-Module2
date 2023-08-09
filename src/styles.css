@@ -27,7 +27,7 @@ header img {
 
 .nav-div {
     display: flex;
-    gap: 1.9rem;
+    gap: 1.5rem;
 }
 
 .nav-div a {
@@ -45,17 +45,37 @@ header img {
 }
 
 .menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     padding: 1rem;
     border-radius: 0.4rem;
+    gap: 1rem;
 }
 
 .menu-card img {
     width: 100px;    
 }
 
+.menu-title {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .menu-card h2 {
     font-size: 0.8rem;
+}
+
+.like-counter {
+    font-size: 0.7rem;
+    margin-left: auto;
+    margin-top: -0.75rem;
+}
+
+button {
+    background-color: transparent;
+    padding: 0.2rem;
 }
 
 footer h2 {
