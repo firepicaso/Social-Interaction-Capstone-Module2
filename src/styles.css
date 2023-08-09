@@ -27,7 +27,7 @@ header img {
 
 .nav-div {
     display: flex;
-    gap: 1.5rem;
+    margin-right: 1rem;
 }
 
 .nav-div a {
