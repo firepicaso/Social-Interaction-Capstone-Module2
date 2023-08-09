@@ -12,10 +12,28 @@ body {
     color: rgb(85, 85, 85);
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 header img {
     margin-top: 2rem;
     margin-left: 3rem;
-    width: 160px;
+    width: 120px;
+}
+
+.nav-div {
+    display: flex;
+    margin-right: 3rem;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.nav-div a {
+    font-size: 1.4rem;
+    color: rgb(57, 57, 57);
 }
 
 footer {
