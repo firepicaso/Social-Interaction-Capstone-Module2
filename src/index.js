@@ -1,9 +1,12 @@
 import './styles.css';
 
-fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=canadian')
+fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=chinese')
   .then((res) => res.json())
   .then((data) => {
     const mealsArray = data.meals;
+    const mealCounter = data.meals.length;
+    document.querySelector('nav').insertAdjacentHTML('beforeend', mealCounter);
+
     mealsArray.forEach((meal) => {
       const menuContainer = document.querySelector('.menu-container');
       const menucard = document.createElement('div');
