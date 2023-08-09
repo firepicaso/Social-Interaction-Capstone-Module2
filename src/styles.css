@@ -52,10 +52,11 @@ header img {
     padding: 1rem;
     border-radius: 0.4rem;
     gap: 1rem;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .menu-card img {
-    width: 100px;    
+    width: 150px;
 }
 
 .menu-title {
@@ -74,8 +75,13 @@ header img {
 }
 
 button {
-    background-color: transparent;
-    padding: 0.2rem;
+    background-color: #ffae18;
+    padding: 0.3rem 0.5rem;
+    border: unset;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 footer h2 {
