@@ -5,6 +5,7 @@ const mealsArray = async (data) => {
   for (let i = 0; i <= data.length - 1; i += 1) {
     const menuContainer = document.querySelector('.menu-container');
     const menucard = document.createElement('div');
+
     menucard.classList.add('menu-card');
     const mealItem = `  <img src="${data[i].strMealThumb}"/>
       <div class="menu-title">
