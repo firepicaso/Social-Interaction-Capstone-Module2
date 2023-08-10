@@ -1,4 +1,5 @@
 import './styles.css';
+import './Asset/restaurantLogoB.png';
 import mealsArray from './modules/displayMeals.js';
 import getMeals from './modules/getMeals.js';
 
@@ -7,12 +8,15 @@ window.addEventListener('load', async () => {
 });
 
 const modal = document.querySelector('.modal');
-const openModal = document.querySelector('.comment-button-test');
+const openModal = document.querySelector('.comment-button');
 const closeModal = document.querySelector('.fa-xmark');
 
-openModal.addEventListener('click', () => {
-  // openModal.preventDefault();
-  modal.classList.add('show');
+document.addEventListener('click', (event) => {
+  const openModal = event.target.closest('.comment-button');
+  
+  if (openModal) {
+    modal.classList.add('show');
+  }
 });
 
 closeModal.addEventListener('click', () => {
