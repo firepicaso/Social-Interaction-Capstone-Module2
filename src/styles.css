@@ -90,6 +90,40 @@ button {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 3rem 4rem 1rem;
+    padding: 1rem;
+}
+
+.modal img {
+    width: 250px;
+    padding-bottom: 1rem;
+}
+
+.show {
+    display: flex;
+}
+
+.fa-xmark {
+    display: flex;
+    align-self: end;
+}
+
+.comment-list {
+    list-style: none;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
 .footer {
   display: flex;
   justify-content: center;
