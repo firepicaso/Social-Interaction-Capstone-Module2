@@ -12,7 +12,7 @@ const mealsArray = async (data) => {
           <i class="fa-regular fa-heart" style="color: #feae01;"></i>
       </div>
       <h3 class="like-counter"> 10 Likes</h3>
-      <button class="comment-button" type="submit">Comment</button>`;
+      <button class="comment-button">Comment</button>`;
     menucard.insertAdjacentHTML('beforeend', mealItem);
     menuContainer.appendChild(menucard);
   });

@@ -6,12 +6,12 @@ window.addEventListener('load', async () => {
   mealsArray(await getMeals());
 });
 
-const openModal = document.querySelector('.comment-button');
-const closeModal = document.querySelector('.fa-xmark');
 const modal = document.querySelector('.modal');
+const openModal = document.querySelector('.comment-button-test');
+const closeModal = document.querySelector('.fa-xmark');
 
 openModal.addEventListener('click', () => {
-  openModal.preventDefault();
+  // openModal.preventDefault();
   modal.classList.add('show');
 });
 
