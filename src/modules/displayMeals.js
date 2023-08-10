@@ -1,6 +1,6 @@
 const mealsArray = async (data) => {
   const mealCounter = data.length;
-  document.querySelector('nav').insertAdjacentHTML('beforeend', mealCounter);
+  document.querySelector('nav').insertAdjacentHTML('beforeend', `(${mealCounter})`);
 
   for (let i = 0; i <= data.length - 1; i += 1) {
     const menuContainer = document.querySelector('.menu-container');
@@ -13,7 +13,7 @@ const mealsArray = async (data) => {
           <i class="fa-regular fa-heart" style="color: #feae01;"></i>
       </div>
       <h3 class="like-counter"> 10 Likes</h3>
-      <button id=${data[i].idMeal}>Comment</button>`;
+      <button id=${data[i].idMeal} class="comment-button">Comment</button>`;
     menucard.insertAdjacentHTML('beforeend', mealItem);
     menuContainer.appendChild(menucard);
   }
