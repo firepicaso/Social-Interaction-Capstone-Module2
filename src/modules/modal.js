@@ -1,4 +1,8 @@
+import postComment from './postComment.js';
+import displayComments from './displayComments.js';
+
 const body = document.querySelector('body');
+
 const ModalData = async (data) => {
   const popDiv = document.createElement('div');
   const popup = document.createElement('div');
@@ -16,16 +20,16 @@ const ModalData = async (data) => {
           <h3>Comments</h3>
           <div class="comment-div">
               <ul class="comment-list">
-                  <li>comment 1</li>
-                  <li>comment 2</li>
-                  <li>comment 3</li>
-              </ul>
+                 </ul>
           </div>
       </div>
-      <form class="comment-form" action="">
-          <input type="text" id="name" required placeholder="Your name">
-          <textarea id="comment" required placeholder="Your comment..."></textarea>
-          <button class="button" type="submit">Comment</button>
+    
+   
+    <h3>Add a comment</h3>
+      <form id="form" class="comment-form" action="">
+          <input type="text" id="name" name="name" required placeholder="Your name">
+          <textarea id="comment"  name="comment" required placeholder="Your comment..."></textarea>
+          <button  class="addComment" type="submit">Comment</button>
       </form>`;
   body.appendChild(popDiv);
   popDiv.appendChild(popup);
@@ -35,7 +39,25 @@ const ModalData = async (data) => {
     popDiv.removeChild(popup);
     body.removeChild(popDiv);
   });
+
+  const addComment = document.querySelector('.addComment');
+  addComment.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.querySelector('#name').value;
+    const comment = document.querySelector('#comment').value;
+    const itemId = data.idMeal;
+    const newData = {
+      item_id: itemId,
+      username,
+      comment,
+    };
+    postComment(newData);
+    document.querySelector('#name').value = '';
+    document.querySelector('#comment').value = '';
+  });
+  displayComments(data);
 };
+
 const openModal = async (id) => {
   const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
   const dataObject = await res.json();
