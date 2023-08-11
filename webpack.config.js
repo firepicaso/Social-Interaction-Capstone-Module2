@@ -25,9 +25,9 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: 'assets/images/[name][ext]',
-        },
+        // generator: {
+        //   filename: 'assets/images/[name][ext]',
+        // },
       },
       {
         test: /\.html$/,
