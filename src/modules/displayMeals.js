@@ -2,6 +2,7 @@ import ModalData from './modal.js';
 import createLike from './createLike.js';
 import getLikes from './getLikes.js';
 
+
 const menuContainer = document.querySelector('.menu-container');
 
 const likesCount = (target, likesArray, numOfLikes) => {
@@ -33,7 +34,6 @@ const mealsArray = async (data) => {
     const likeButton = menucard.querySelector('.fa-heart');
     const numOfLikes = menucard.querySelector('.like-counter');
     const likesArray = await getLikes();
-    console.log(likesArray);
 
     likesCount(likeButton, likesArray, numOfLikes);
 

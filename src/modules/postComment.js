@@ -3,11 +3,10 @@ const postComment = async (data) => {
   const res = await fetch(url, {
     method: 'POST',
     headers: {
-      'Content-type': 'application/json',
+      'Content-type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(data),
   });
-
   return res.ok;
 };
 

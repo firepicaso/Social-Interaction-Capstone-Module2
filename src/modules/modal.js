@@ -37,7 +37,7 @@ const ModalData = async (data) => {
     body.removeChild(popDiv);
   });
 
-  const addComment = document.querySelector('.addComment');
+  const addComment = document.querySelector('.comment-form');
   addComment.addEventListener('submit', (e) => {
     e.preventDefault();
     const username = document.querySelector('#name').value;
@@ -51,6 +51,10 @@ const ModalData = async (data) => {
     postComment(newData);
     document.querySelector('#name').value = '';
     document.querySelector('#comment').value = '';
+    console.log('executed');
+    setTimeout(() => {
+      displayComments(data);
+    }, 1000);
   });
   displayComments(data);
 };
@@ -61,4 +65,5 @@ const openModal = async (id) => {
   const data = dataObject.meals;
   ModalData(data[0]);
 };
+
 export default openModal;
