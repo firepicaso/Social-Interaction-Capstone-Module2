@@ -13,6 +13,7 @@ const ModalData = async (data) => {
       <h2 class="cook">How to cook: <a class="ytlink" href = "${data.strYoutube}">Instruction Video Link</a></h2>
       
       <div>
+      
           <h3>Comments</h3>
           <div class="comment-div">
               <ul class="comment-list">
