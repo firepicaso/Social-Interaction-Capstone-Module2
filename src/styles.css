@@ -113,8 +113,16 @@ button {
     align-self: end;
 }
 
+.comment-div {
+    margin-top: 1rem;
+}
+
 .comment-list {
     list-style: none;
+}
+
+.add-comment-div {
+    margin-top: 1rem;
 }
 
 .comment-form {
