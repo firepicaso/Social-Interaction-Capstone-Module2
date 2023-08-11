@@ -1,6 +1,7 @@
 import ModalData from './modal.js';
 import createLike from './createLike.js';
 import getLikes from './getLikes.js';
+import countComments from './countComments.js';
 
 
 const menuContainer = document.querySelector('.menu-container');

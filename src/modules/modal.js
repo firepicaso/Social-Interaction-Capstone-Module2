@@ -1,5 +1,6 @@
 import postComment from './postComment.js';
 import displayComments from './displayComments.js';
+import countComments from './countComments.js';
 
 const body = document.querySelector('body');
 
@@ -11,23 +12,25 @@ const ModalData = async (data) => {
   popup.innerHTML = `  <i class="fa-solid fa-xmark popup-close"></i>
       <img src="${data.strMealThumb}" alt="">
       <div class="details">
-      <h2 class="meal-name"><span>Meal Name:</span>  ${data.strMeal}</h2>
-      <h2 class="category"><span>Category:</span> ${data.strCategory}</h2>
+        <h2 class="meal-name"><span>Meal Name:</span>  ${data.strMeal}</h2>
+        <h2 class="category"><span>Category:</span> ${data.strCategory}</h2>
       </div>
       <h2 class="cook">How to cook: <a class="ytlink" href = "${data.strYoutube}" target="_blank">Instruction Video Link</a></h2>      
-      <div>      
-          <h3>Comments</h3>
-          <div class="comment-div">
+      <div class="margin-top-mid">      
+          <h3 class="count-comment"></h3>
+          <div class="comment-div margin-top-mid">
               <ul class="comment-list">
                  </ul>
           </div>
-      </div>  
-      <h3>Add a comment</h3>
-      <form id="form" class="comment-form" action="">
-          <input type="text" id="name" name="name" required placeholder="Your name">
-          <textarea id="comment"  name="comment" required placeholder="Your comment..."></textarea>
-          <button  class="addComment" type="submit">Comment</button>
-      </form>`;
+      </div>
+      <div class="form-container margin-top-high">
+        <h3>Add a comment</h3>
+        <form id="form" class="comment-form .margin-top-mid" action="">
+            <input type="text" id="name" name="name" required placeholder="Your name">
+            <textarea id="comment"  name="comment" required placeholder="Your comment..."></textarea>
+            <button  class="addComment" type="submit">Comment</button>
+        </form>
+      </div>`;
   body.appendChild(popDiv);
   popDiv.appendChild(popup);
 
@@ -51,7 +54,6 @@ const ModalData = async (data) => {
     postComment(newData);
     document.querySelector('#name').value = '';
     document.querySelector('#comment').value = '';
-    console.log('executed');
     setTimeout(() => {
       displayComments(data);
     }, 1000);
