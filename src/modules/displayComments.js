@@ -1,4 +1,4 @@
-import countComments from "./countComments";
+import countComments from './countComments.js';
 
 const displayComments = async (item) => {
   const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/PGGt9gIHEjpHDQFUOxLn/comments?item_id=${item.idMeal}`;
@@ -6,7 +6,7 @@ const displayComments = async (item) => {
 
   const commentsContainer = document.querySelector('.comment-list');
   commentsContainer.innerHTML = '';
-  const commentCount = document.querySelector('.count-comment')
+  const commentCount = document.querySelector('.count-comment');
   commentCount.innerHTML = `Comments (${countComments(myComment)})`;
   if (!myComment.length) myComment = [];
   myComment.forEach((comment) => {
