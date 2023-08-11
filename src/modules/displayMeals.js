@@ -1,9 +1,12 @@
+import ModalData from './modal.js';
+
+const menuContainer = document.querySelector('.menu-container');
+
 const mealsArray = async (data) => {
   const mealCounter = data.length;
-  document.querySelector('nav').insertAdjacentHTML('beforeend', `(${mealCounter})`);
+  document.querySelector('nav').insertAdjacentHTML('beforeend', mealCounter);
 
   for (let i = 0; i <= data.length - 1; i += 1) {
-    const menuContainer = document.querySelector('.menu-container');
     const menucard = document.createElement('div');
 
     menucard.classList.add('menu-card');
@@ -13,9 +16,16 @@ const mealsArray = async (data) => {
           <i class="fa-regular fa-heart" style="color: #feae01;"></i>
       </div>
       <h3 class="like-counter"> 10 Likes</h3>
-      <button id=${data[i].idMeal} class="comment-button">Comment</button>`;
+      <button class="comment-btn">Comment</button>`;
     menucard.insertAdjacentHTML('beforeend', mealItem);
     menuContainer.appendChild(menucard);
+
+    const commentBtn = menucard.querySelector('.comment-btn');
+    commentBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const mealId = data[i].idMeal;
+      await ModalData(mealId);
+    });
   }
 };
 
