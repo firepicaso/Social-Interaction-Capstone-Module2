@@ -1,5 +1,6 @@
 import postComment from './postComment.js';
 import displayComments from './displayComments.js';
+import countComments from './countComments.js';
 
 const body = document.querySelector('body');
 
@@ -16,7 +17,7 @@ const ModalData = async (data) => {
       </div>
       <h2 class="cook">How to cook: <a class="ytlink" href = "${data.strYoutube}" target="_blank">Instruction Video Link</a></h2>      
       <div class="margin-top-mid">      
-          <h3>Comments</h3>
+          <h3 class="count-comment"></h3>
           <div class="comment-div margin-top-mid">
               <ul class="comment-list">
                  </ul>
