@@ -70,13 +70,13 @@ We are using HTML, CSS, and Javascript and APIs in this project.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Underconstruction
+[Live Demo](https://firepicaso.github.io/Social-Interaction-Capstone-Module2/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Loom Walkthrough
+## Zoom Recording
 
-Underconstruction
+[Walkthrough Video](https://drive.google.com/file/d/1EUP8OElyi6MxxPPi6XfdOt46yTKOkN5P/view?usp=sharing)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
