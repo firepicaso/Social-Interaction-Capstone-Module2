@@ -181,7 +181,9 @@ span {
   display: flex;
   justify-content: center;
   padding: 50px;
+  position: absolute;
   bottom: 0;
+  left: 0;
   font-size: 0.9rem;
   font-weight: 600;
   color: rgb(130, 130, 130);
