@@ -76,7 +76,7 @@ We are using HTML, CSS, and Javascript and APIs in this project.
 
 ## Zoom Recording
 
-[Walkthrough Video](https://drive.google.com/file/d/1EUP8OElyi6MxxPPi6XfdOt46yTKOkN5P/view?usp=sharing)
+[Walkthrough Video](https://drive.google.com/file/d/1aTxf4pZKLsT8hOwS_c6Y0etpiuH5bm4h/view?usp=sharing)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
