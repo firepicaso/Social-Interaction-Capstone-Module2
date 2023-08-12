@@ -1,6 +1,5 @@
 import postComment from './postComment.js';
 import displayComments from './displayComments.js';
-import countComments from './countComments.js';
 
 const body = document.querySelector('body');
 

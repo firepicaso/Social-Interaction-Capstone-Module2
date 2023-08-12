@@ -89,6 +89,7 @@ button {
   font-size: 0.8rem;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 .main-pop {
   width: 100%;
   height: 100%;
@@ -106,15 +107,15 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: fit-content;
+  height: min-content;
   background-color: white;
   margin-bottom: 20px;
   padding: 1rem;
 }
 
 .modal img {
-    width: 60%;
-    padding-bottom: 1rem;
+  width: 60%;
+  padding-bottom: 1rem;
 }
 
 .details {
@@ -124,12 +125,12 @@ button {
   margin-top: 3%;
 }
 
-span{
+span {
   font-weight: 600;
 }
 
 .meal-name {
-  margin-right: auto ;
+  margin-right: auto;
   font-size: 20px;
   font-weight: 300;
 }
@@ -143,7 +144,7 @@ span{
 .cook {
   font-size: 20px;
   margin: 1rem 0;
-  width: 80%;;
+  width: 80%;
 }
 
 .ytlink {
@@ -152,8 +153,8 @@ span{
 }
 
 .fa-xmark {
-    display: flex;
-    align-self: end;
+  display: flex;
+  align-self: end;
 }
 
 .form-container {
@@ -163,17 +164,17 @@ span{
 }
 
 .comment-list {
-    list-style: none;
+  list-style: none;
 }
 
 .add-comment-div {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .comment-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .footer {

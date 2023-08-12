@@ -1,8 +1,6 @@
 import ModalData from './modal.js';
 import createLike from './createLike.js';
 import getLikes from './getLikes.js';
-import countComments from './countComments.js';
-
 
 const menuContainer = document.querySelector('.menu-container');
 
@@ -16,7 +14,7 @@ const likesCount = (target, likesArray, numOfLikes) => {
 
 const mealsArray = async (data) => {
   const mealCounter = data.length;
-  document.querySelector('nav').insertAdjacentHTML('beforeend', mealCounter);
+  document.querySelector('nav').insertAdjacentHTML('beforeend', `(${mealCounter})`);
 
   for (let i = 0; i <= data.length - 1; i += 1) {
     const menucard = document.createElement('div');
