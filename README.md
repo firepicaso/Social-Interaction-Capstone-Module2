@@ -130,10 +130,12 @@ Please check the Event Portal throug this link
 👤 **Fatuma Hussein**
 
 - GitHub: [@githubhandle](https://github.com/fatmahussein)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fatuma-hussein-48149917b/)
 
 👤 **FirePicaso**
 
 - GitHub: [@githubhandle](https://github.com/firepicaso)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mustakim-masum/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
